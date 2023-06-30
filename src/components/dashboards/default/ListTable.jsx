@@ -168,7 +168,7 @@ function ListTable({ listdata }) {
   ];
   const now = Date.now();
   const data = [];
-  listdata?.map((item, index) => {
+  listdata?.map(item => {
     const rndDate = Math.floor(Math.random() * 172800000);
     const rndVol = Math.floor(Math.random() * 2000);
     data.push({

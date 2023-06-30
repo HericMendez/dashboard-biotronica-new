@@ -1,5 +1,5 @@
 import FalconCloseButton from './FalconCloseButton';
-import Flex from './Flex';
+
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 
