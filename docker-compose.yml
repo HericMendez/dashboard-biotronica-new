@@ -1,0 +1,20 @@
+version: '3.8'
+
+networks:
+  net:
+    name: net
+    external: true
+
+services:
+  app:
+    container_name: dashboard-biotronica-c
+    image: dashboard-biotronica-i
+    build:
+      context: .
+    ports:
+      - 7000:80
+    environment:
+      - VIRTUAL_HOST=site.biotronica.tech
+      - LETSENCRYPT_HOST=site.biotronica.tech
+    networks:
+      - net
